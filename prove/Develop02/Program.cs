@@ -52,6 +52,7 @@ class Program
     {
         List<string> prompts = new List<string>();
 
+        //I added a lot of prompts to choose from 
         prompts.Add("What is one word that describes today? Why?");
         prompts.Add("What are 1 thing you're grateful for and why?");
         prompts.Add("How was your day today? What went well, and what could have gone better?");
