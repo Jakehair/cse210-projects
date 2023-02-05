@@ -1,0 +1,4 @@
+SimpleGoal,eat ,eat some food,10,True
+EternalGoal,read scriptures,read them,15,0
+ChecklistGoal,go to the temple,go 5 times to the temple,15,5,1,500
+ChecklistGoal,eat lots,eat so much food,40,3,1,1000
