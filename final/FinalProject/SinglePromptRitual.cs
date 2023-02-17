@@ -1,8 +1,18 @@
 class SinglePromptRitual : Ritual
 {
-    List<string> prompts = new List<string>();
+    public string customPrompt;
+
+    public SinglePromptRitual()
+    {
+        Console.WriteLine("What is the prompt?");
+        customPrompt = Console.ReadLine();
+    }
     public override void Prompt()
     {
-        throw new NotImplementedException();
+        Console.WriteLine(customPrompt);
+
+        Console.WriteLine("Press enter to continue:");
+        Console.ReadLine();
     }
+
 }

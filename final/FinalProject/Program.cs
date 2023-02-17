@@ -2,8 +2,10 @@ using System;
 
 class Program
 {
+
     static void Main(string[] args)
     {
-        Console.WriteLine("");
+        RoutineManager RunProgram = new RoutineManager();
+        RunProgram.Run();
     }
 }

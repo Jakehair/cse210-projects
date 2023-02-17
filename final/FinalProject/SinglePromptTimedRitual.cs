@@ -1,10 +1,20 @@
 class SinglePromptTimedRitual : Ritual
 {
-
-    List<string> prompts = new List<string>();
+    string customPrompt;
     int time;
+
+    public SinglePromptTimedRitual()
+    {
+        Console.WriteLine("How long in seconds will this ritual last?");
+        time = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("What is the prompt?");
+        customPrompt = Console.ReadLine();
+    }
+
     public override void Prompt()
     {
-        throw new NotImplementedException();
+        Console.WriteLine(customPrompt);
+        Thread.Sleep(1000 * time);
     }
 }
